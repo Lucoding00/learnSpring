@@ -4,5 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    直接就可以配置这个创建这个user类，那么就可以直接配置这个类。-->
-    <bean id="user" class="com.company.User"></bean>
+    <bean id="user" class="com.company.User">
+        <constructor-arg name="age" value="12"></constructor-arg>
+        <constructor-arg name="name" value="鲁佳磊"></constructor-arg>
+    </bean>
 </beans>
